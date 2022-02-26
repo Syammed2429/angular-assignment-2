@@ -5,4 +5,14 @@ import { Component } from '@angular/core';
     templateUrl: './form.component.html'
 })
 
-export class FormComponent {}
+export class FormComponent {
+    userName: string = '';
+
+    updateUserName = () => {
+        this.userName = `The Updated username is ${this.userName}`;
+    }
+
+    resetUserName = () => {
+        this.userName = ''
+    }
+}
